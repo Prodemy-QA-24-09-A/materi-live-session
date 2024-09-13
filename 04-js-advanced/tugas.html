@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showEvenNumbers()">Show Even Numbers</button>
+
+    <script>
+      function showEvenNumbers() {
+        // Array containing numbers from 1 to 10
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // Filter the array to get even numbers
+        const evenNumbers = numbers.filter(function (number) {
+          return number % 2 === 0;
+        });
+
+        // Output the even numbers using document.write
+        document.write("Even numbers: " + evenNumbers.join(", "));
+      }
+    </script>
+  </body>
+</html>
